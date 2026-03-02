@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - FitZone Gym</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">💪 FitZone Gym</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/booking">Book Now</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <section class="hero" style="padding: 100px 2rem;">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you. Get in touch with FitZone Gym today!</p>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+      <!-- Contact Form -->
+      <div>
+        <h2 style="text-align: left;">Send us a Message</h2>
+        <form id="contactForm" onsubmit="handleFormSubmit(event, 'contact')">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div>
+        <h2 style="text-align: left;">Contact Information</h2>
+        
+        <div class="card">
+          <h3 style="text-align: left;">📍 Address</h3>
+          <p>
+            FitZone Gym<br>
+            123 Main Street<br>
+            Your City, State 12345
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="text-align: left;">📞 Phone</h3>
+          <p>
+            Main: <strong>(555) 123-4567</strong><br>
+            Member Support: (555) 123-4568<br>
+            Classes & Bookings: (555) 123-4569
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="text-align: left;">📧 Email</h3>
+          <p>
+            General: info@fitzonegym.com<br>
+            Support: support@fitzonegym.com<br>
+            Bookings: bookings@fitzonegym.com
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="text-align: left;">🕒 Business Hours</h3>
+          <p>
+            Monday - Friday: 6:00 AM - 10:00 PM<br>
+            Saturday: 7:00 AM - 9:00 PM<br>
+            Sunday: 7:00 AM - 9:00 PM
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="text-align: left;">🌐 Follow Us</h3>
+          <p>
+            <a href="#" style="color: #ff6b35; text-decoration: none; margin-right: 1rem;">Facebook</a>
+            <a href="#" style="color: #ff6b35; text-decoration: none; margin-right: 1rem;">Instagram</a>
+            <a href="#" style="color: #ff6b35; text-decoration: none;">Twitter</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section (Placeholder) -->
+  <section style="background: #f5f5f5;">
+    <div class="container">
+      <h2>Visit Our Location</h2>
+      <div style="width: 100%; height: 400px; background: #ddd; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+        <div style="text-align: center; color: #999;">
+          <p style="font-size: 3rem; margin-bottom: 1rem;">📍</p>
+          <p>Map coming soon - 123 Main Street, Your City</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>When can I visit?</h3>
+        <p>Our gym is open Monday-Friday 6 AM - 10 PM, and Saturday-Sunday 7 AM - 9 PM. Premium and Elite members get 24/7 access.</p>
+      </div>
+      <div class="card">
+        <h3>Do you offer trials?</h3>
+        <p>Yes! We offer a free 1-day trial pass or a low-cost 7-day trial week. Visit us or call to book your trial.</p>
+      </div>
+      <div class="card">
+        <h3>Can I cancel anytime?</h3>
+        <p>Yes, all memberships can be cancelled anytime with 30 days notice. No hidden fees or long-term contracts.</p>
+      </div>
+      <div class="card">
+        <h3>Do you have personal trainers?</h3>
+        <p>Absolutely! Our certified personal trainers are available for one-on-one sessions and group training programs.</p>
+      </div>
+      <div class="card">
+        <h3>What equipment do you have?</h3>
+        <p>We have a wide range of modern equipment including cardio machines, free weights, strength training equipment, and more.</p>
+      </div>
+      <div class="card">
+        <h3>Are classes included?</h3>
+        <p>Group classes are included with Premium and Elite memberships. Basic members can add classes for a small fee.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>FitZone Gym</h4>
+        <p>📍 123 Main Street, Your City</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ info@fitzonegym.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="/">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Hours</h4>
+        <p>Monday - Friday: 6 AM - 10 PM</p>
+        <p>Saturday - Sunday: 7 AM - 9 PM</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FitZone Gym. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
